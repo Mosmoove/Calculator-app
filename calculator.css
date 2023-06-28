@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    font-family: 'Helvetica', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.container {
+    backdrop-filter: blur(5.5x);
+    -webkit-backdrop-filter: blur(5.5px);
+    background-color: white;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(35, 35, 35, 0.1);
+    color: black;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(250, 250, 120, 0.016);
+    border: 1px solid rgba(250, 250, 250, 0.40);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 40px;
+}
+
+.screen {
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+background: rgba(240, 240, 240, 0.961);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+color: black;
+font-size: 35px;
+overflow: auto;
+padding: 20px;
+text-align: right;
+width: 330px;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button {
+    backdrop-filter: blut(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(250, 250, 250, 0.75);
+    border: 1px solid rgba(35, 35, 35, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #ffef78;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.calc-button:last-child{
+    backdrop-filter: blut(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(250, 250, 250, 0.75);
+    border: 1px solid rgba(35, 35, 35, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: white;
+    background: orange;
+}
+
+.calc-button:hover {
+    background-color: inherit;
+    transition: all 0.2s ease-in-out;
+}
+
+.calc-button:active {
+    background-color: #ffef78;
+}
+
+.double {
+    flex-basis: 47%;
+}
+
+.triple {
+    flex-basis: 73%;
+}
